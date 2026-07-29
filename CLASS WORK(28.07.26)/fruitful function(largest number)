@@ -1,0 +1,16 @@
+def find_largest(numbers):
+    if not numbers:
+        return None  # Return None if the list is empty
+    
+    largest = numbers[0]
+    for num in numbers:
+        if num > largest:
+            largest = num
+    return largest
+
+# Main Program
+user_input = input("Enter integers separated by space: ")
+num_list = [int(x) for x in user_input.split()]
+
+result = find_largest(num_list)
+print(f"Largest element: {result}")
