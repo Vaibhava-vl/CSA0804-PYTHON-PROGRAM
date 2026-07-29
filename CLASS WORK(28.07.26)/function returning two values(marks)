@@ -1,0 +1,29 @@
+def calculate_results(m1, m2, m3):
+    total = m1 + m2 + m3
+    average = total / 3
+    
+    # Grade assignment based on average
+    if average >= 90:
+        grade = "A"
+    elif average >= 75:
+        grade = "B"
+    elif average >= 50:
+        grade = "C"
+    elif average >= 35:
+        grade = "D"
+    else:
+        grade = "F"
+        
+    return total, average, grade
+
+# Main Program
+m1 = float(input("Enter marks for Subject 1: "))
+m2 = float(input("Enter marks for Subject 2: "))
+m3 = float(input("Enter marks for Subject 3: "))
+
+total, average, grade = calculate_results(m1, m2, m3)
+
+print("\n--- Student Results ---")
+print(f"Total Marks: {total}")
+print(f"Average: {average:.2f}")
+print(f"Grade: {grade}")
