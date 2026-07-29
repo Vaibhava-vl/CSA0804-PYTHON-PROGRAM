@@ -1,0 +1,13 @@
+def get_math_properties(n):
+    square = n ** 2
+    cube = n ** 3
+    square_root = n ** 0.5
+    return square, cube, square_root
+
+# Main Program
+num = float(input("Enter a number: "))
+square, cube, square_root = get_math_properties(num)
+
+print(f"\nSquare: {square}")
+print(f"Cube: {cube}")
+print(f"Square Root: {square_root:.2f}")
